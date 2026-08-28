@@ -12,8 +12,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-200 dark:border-white/5 py-10 bg-slate-100/90 dark:bg-[#050711]/90">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-slate-600 dark:text-slate-400 text-sm">
+    <footer className="border-t border-slate-300 dark:border-white/8 py-10 relative z-10 w-full max-w-full overflow-hidden bg-slate-100/90 dark:bg-[#050711]/90">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-slate-600 dark:text-slate-400 text-sm">
         
         {/* Left Copyright */}
         <div className="flex items-center gap-3">

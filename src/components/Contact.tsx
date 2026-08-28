@@ -17,11 +17,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-py relative overflow-hidden">
-      {/* Background ambient lighting */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-blue-600/10 blur-[170px] pointer-events-none" />
+    <section id="contact" className="section-py relative overflow-hidden w-full max-w-full">
+      {/* Background ambient light */}
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-cyan-500/10 blur-[130px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full min-w-0">
         <SectionHeading
           index="06"
           label="Get In Touch"

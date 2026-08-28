@@ -26,7 +26,7 @@ export default function Projects() {
       <div className="absolute top-1/4 -left-40 w-96 h-96 rounded-full bg-blue-600/10 blur-[140px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-40 w-96 h-96 rounded-full bg-cyan-500/10 blur-[140px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <SectionHeading
           index="03"
           label="Featured Projects"

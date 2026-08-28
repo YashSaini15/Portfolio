@@ -68,7 +68,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
 
         {/* Logo / Name */}
         <a

@@ -68,11 +68,11 @@ export default function Skills() {
   }, [searchQuery, active, allSkills]);
 
   return (
-    <section id="skills" className="section-py relative overflow-hidden">
+    <section id="skills" className="section-py relative overflow-hidden w-full max-w-full">
       {/* Ambient background glow */}
       <div className="absolute top-1/3 -right-40 w-96 h-96 rounded-full bg-cyan-500/10 blur-[130px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full min-w-0">
         <SectionHeading
           index="01"
           label="Skills & Tech Stack"

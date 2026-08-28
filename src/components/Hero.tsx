@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* ── Main content ─────────────────────────────────────────────── */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-28 pb-16 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-28 pb-16 w-full">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-14">
 
           {/* Left: Text ──────────────────────────────────────────────── */}
