@@ -63,6 +63,7 @@ const CODE_TABS = [
 export default function About() {
   const [activeTab, setActiveTab] = useState(0);
   const [copied, setCopied] = useState(false);
+  const [isPhotoActive, setIsPhotoActive] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(CODE_TABS[activeTab].code);
@@ -92,15 +93,23 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-5 space-y-4 sm:space-y-5 w-full min-w-0 max-w-full"
           >
-            {/* Photo Card */}
-            <div className="glass-card rounded-2xl p-2.5 sm:p-3 border border-sky-500/20 dark:border-sky-400/20 relative overflow-hidden group shadow-xl w-full max-w-full">
+            {/* Photo Card with click/tap toggle and mobile color support */}
+            <div 
+              onClick={() => setIsPhotoActive((prev) => !prev)}
+              className="glass-card rounded-2xl p-2.5 sm:p-3 border border-sky-500/20 dark:border-sky-400/20 relative overflow-hidden group shadow-xl w-full max-w-full cursor-pointer select-none"
+              title="Click/tap to toggle color"
+            >
               <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-[#070b16] w-full">
                 <Image
                   src="/avatar.jpg"
                   alt={personal.name}
                   fill
                   loading="lazy"
-                  className="object-cover object-top grayscale group-hover:grayscale-0 scale-105 group-hover:scale-100 transition-all duration-700"
+                  className={`object-cover object-top transition-all duration-700 ${
+                    isPhotoActive
+                      ? "grayscale-0 scale-100"
+                      : "grayscale-0 sm:grayscale sm:group-hover:grayscale-0 sm:scale-105 sm:group-hover:scale-100"
+                  }`}
                   sizes="(max-width: 1024px) 100vw, 400px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070b16] via-transparent to-transparent opacity-80" />
